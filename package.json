@@ -1,0 +1,50 @@
+{
+  "name": "call-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ivanslavgorodsky-sharp-dev/call-app.git",
+  "author": "Ivan Slavgorodsky <ivan.slavgorodsky@sharp-dev.net>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/register": "^7.8.6",
+    "@popperjs/core": "^2.10.1",
+    "@stripe/react-stripe-js": "^1.4.1",
+    "@stripe/stripe-js": "^1.17.1",
+    "@twilio/voice-sdk": "^2.0.1",
+    "axios": "^0.21.4",
+    "bootstrap": "^5.1.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.16.1",
+    "express-handlebars": "^5.3.2",
+    "hbs": "^4.1.2",
+    "mongoose": "^6.0.6",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "stripe": "^8.176.0",
+    "twilio": "^3.67.2",
+    "twilio-client": "^1.14.0"
+  },
+  "scripts": {
+    "start": "yarn build && node index.js",
+    "dev": "nodemon app.js",
+    "build": "webpack --config webpack.config.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^5.2.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
